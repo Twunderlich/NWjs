@@ -8,6 +8,12 @@
 <p>'Right click' to show context menu.</p>
 
 <script>
+/*
+All NW.js APIs are loaded in nw object globally and can be used directly in JavaScript files. See API References for full list of supported APIs.
+
+This example shows how to create a native context menu in your NW.js app. 
+*/
+
 // Create an empty context menu
 var menu = new nw.Menu();
 
@@ -32,6 +38,8 @@ document.body.addEventListener('contextmenu', function(ev) {
   return false;
 }, false);
 
+// The legacy way of loading NW.js APIs using 'reuire( 'nwgui' )' is also supported. It returns the same 'nw' object.
 </script>  
 </body>
 </html>
+
